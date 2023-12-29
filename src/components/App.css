@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:opsz@9..40&family=Questrial&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:opsz@9..40&family=M+PLUS+1p&family=Questrial&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cinzel&family=DM+Sans:opsz@9..40&family=M+PLUS+1p&family=Questrial&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caveat&family=Cinzel&family=DM+Sans:opsz@9..40&family=M+PLUS+1p&family=Questrial&display=swap');
+::-webkit-scrollbar{
+    width: 10px;
+}
+/* Smooth scroller */
+html{
+    scroll-behavior: smooth;
+}
+.caveat{
+    font-family: 'Caveat', cursive;
+    
+}
+.questrial{
+    font-family: 'Questrial', sans-serif;
+    color: rgb(238, 240, 224);
+}
+.m-plus{
+    font-family: 'M PLUS 1p', sans-serif;
+    color: rgb(16, 21, 25);
+    
+}
+.cinzel{
+    font-family: 'Cinzel', serif;
+    color: rgb(16, 16, 15);
+    font-weight: 600;
+}
+.div1{
+    background-image: url('https://images.unsplash.com/photo-1528826542659-27db5adea13c?q=80&w=2845&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.left{
+    outline: none;
+
+}
+.right{
+    background-image: url('');
+}
+.circle{
+    background-image: url('https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.IGajcafoK9q69V5DbP6B_wHaHB%26pid%3DApi&f=1&ipt=345918fa2dd556309794fba9af9758f0690895a8c209de56d4750e31ba6bbe7a&ipo=images');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.card1-img{
+    background-image: url('https://images.unsplash.com/photo-1551882547-ff40c63fe5fa?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8aG90ZWxzfGVufDB8fDB8fHww');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 70%;
+    width: 100%;
+    border-radius: 20px 20px 0px 0px;
+}
+.card2-img{
+    background-image: url('https://images.unsplash.com/photo-1566073771259-6a8506099945?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8aG90ZWxzfGVufDB8fDB8fHww');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 70%;
+    width: 100%;
+    border-radius: 20px 20px 0px 0px;
+}
+.card3-img{
+    background-image: url('https://images.unsplash.com/photo-1590447158019-883d8d5f8bc7?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTh8fGhvdGVsc3xlbnwwfHwwfHx8MA%3D%3D');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 70%;
+    width: 100%;
+    border-radius: 20px 20px 0px 0px;
+}
+.cards{
+    position: relative;
+    z-index: 5;
+}
+.img{
+    background-image: url('https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.twAVaLjVWmw3a8W_jGrUFQHaGW%26pid%3DApi&f=1&ipt=b34df4d1d600461e957d1beacbd97217f6cb0881ace682ddb513302a952efe1c&ipo=images');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 100%;
+}
+.img1{
+    background-image: url('https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.-JxXI_iZ5t6fyE1ZV3z7EwHaFq%26pid%3DApi&f=1&ipt=0aaaff0c04f7747d1c026ff1605feec993127c875341aea81ee90dcca2506701&ipo=images');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 100%;
+
+}
+.img2{
+    background-image: url('https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.explicit.bing.net%2Fth%3Fid%3DOIP.5FB48bF47esk4KTw-bkGcgHaEn%26pid%3DApi&f=1&ipt=356d20e6ecf3f83a8c20929d34ad6ed3607ab90543af08b94b5dfbb64b41b643&ipo=images');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 100%;
+}
+.img3{
+    background-image: url('https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftheinspiredtreehouse.com%2Fwp-content%2Fuploads%2F2014%2F07%2Flarge_8940223769.jpg&f=1&nofb=1&ipt=1a59c068e1e29c9a978ebd70585f1458749aa80c71fa8aa350b7d43a47eea8ab&ipo=images');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 100%;
+}
+.footer-right{
+    background-image: url('depositphotos_116399246-stock-photo-girl-traveling-with-backpack-1237575334-removebg-preview.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 50vw;
+    height:70vh
+}   
