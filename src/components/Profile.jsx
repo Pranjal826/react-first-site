@@ -11,7 +11,7 @@ const Profile = () => {
 const navigate=useNavigate()
   useEffect(() => {
     if (!loggedInUser) {
-      toast.error('Please Login Again...')
+      toast.error('Login to access profile')
       navigate("/login");
     } else {
       dispatch(showuser(loggedInUser.id));
@@ -25,11 +25,13 @@ const navigate=useNavigate()
       navigate('/')
     }
   };
-
+const handleEdit=()=>{
+  navigate('/edit')
+}
   return (
     <div className="h-screen flex items-center justify-center py-6 sm:py-12">
       <div className="w-[50%] h-[50%] flex flex-col mx-auto bg-white p-8 shadow-md rounded-md">
-        <h2 className="text-3xl font-semibold mb-4 text-center">Profile Page</h2>
+        <h2 className="text-3xl font-semibold mb-4 text-center courgette">Profile Page</h2>
         {loggedInUser && (
           <div>
             <p className="text-lg mb-2">
@@ -41,6 +43,9 @@ const navigate=useNavigate()
             </p>
             <button onClick={handleDelete} className="mt-4 bg-red-500 text-white px-4 py-2 rounded-md">
               Delete
+            </button>
+            <button onClick={handleEdit} className="mt-4 bg-red-500 text-white px-4 py-2 rounded-md">
+              Edit
             </button>
           </div>
         )}

@@ -21,8 +21,9 @@ const Nav = () => {
       <div className="flex justify-end p-5 gap-10">
         <NavLink to="/">Home</NavLink>
         <NavLink to="/about">About</NavLink>
-        <NavLink to="/house">Types of House</NavLink>
         <NavLink to="/contact">Contact</NavLink>
+        <NavLink to="/profile">Profile</NavLink>
+        
         <NavLink to="/login">
           <button className="rounded-lg border-grey px-4 border-2">Login</button>
         </NavLink>

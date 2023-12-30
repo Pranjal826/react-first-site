@@ -108,9 +108,9 @@ export const Footerbot = () => {
             <div className="icons flex flex-col w-[100%] justify-evenly text-right h-[50%] ">
                <Link to='/' className="text-blue-600	">Home</Link>
                <Link to='/about' className="text-blue-600	">About</Link>
-               <Link to='/pricing' className="text-blue-600	">Pricing</Link>
-               <Link to='/downloads' className="text-blue-600	">Download</Link>
-               <Link to='/services' className="text-blue-600	">Services</Link>
+               <Link to='#' className="text-blue-600	">Pricing</Link>
+               <Link to='#' className="text-blue-600	">Download</Link>
+               <Link to='#' className="text-blue-600	">Services</Link>
 
 
             </div>
@@ -120,9 +120,9 @@ export const Footerbot = () => {
             <div className="icons flex flex-col w-[100%] justify-evenly text-right  h-[50%] ">
                <Link to='/' className="text-blue-600	">FAQs</Link>
                <Link to='/about' className="text-blue-600	">How it</Link>
-               <Link to='/pricing' className="text-blue-600	">Features</Link>
-               <Link to='/downloads' className="text-blue-600	">Contact</Link>
-               <Link to='/services' className="text-blue-600	">Reporting</Link>
+               <Link to='#' className="text-blue-600	">Features</Link>
+               <Link to='/contact' className="text-blue-600	">Contact</Link>
+               <Link to='#' className="text-blue-600	">Reporting</Link>
 
 
             </div>
@@ -130,7 +130,7 @@ export const Footerbot = () => {
         <div className="footerbot-left w-[25%] flex flex-col h-full justify-center gap-4  items-end pr-4">
         <h1 className="text-[18px] font-bold ">Contact Us</h1>
             <div className="icons flex flex-col w-[100%] justify-evenly items-end  h-[50%] ">
-               <p className="text-blue-600	">9302931857</p>
+               <p className="text-blue-600	">7509008890</p>
                <p className="text-blue-600	">pranjalshukla245@gmail.com</p>
                <p className="text-blue-600	">Prayagraj,UP</p>
             </div>

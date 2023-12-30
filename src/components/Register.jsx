@@ -52,9 +52,9 @@ const Register = () => {
   
   return (
     <>
-      <div className="w-[100%] h-[80vh] bg-white rounded shadow-md flex flex-col justify-center items-center">
+      <div className="w-[100%] h-[80vh] bg-white rounded flex flex-col justify-center items-center">
         <h2 className="text-2xl font-semibold mb-6">Register</h2>
-        <form onSubmit={SubmitHandler}>
+        <form onSubmit={SubmitHandler} className='w-[30%]'>
           <div className="mb-4">
             <label htmlFor="firstName" className="block text-sm font-medium text-gray-600">
               First Name

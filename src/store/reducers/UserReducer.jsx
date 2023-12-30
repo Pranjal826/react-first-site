@@ -29,8 +29,16 @@ export const userSlice = createSlice({
         state.users.splice(action.payload, 1);
         localStorage.setItem("users", JSON.stringify(state.users));
     },  
+    updateUser: (state, action) => {
+      const updatedUser = action.payload;
+      state.users = state.users.map((user) =>
+        user.id === updatedUser.id ? { ...user, ...updatedUser } : user
+      );
+      state.loggedInUser = updatedUser;
+      localStorage.setItem("users", JSON.stringify(state.users));
+    },
   },
 });
 
-export const { loginuser, createuser, showuser,deleteuser } = userSlice.actions;
+export const { loginuser, createuser, showuser,deleteuser,updateUser } = userSlice.actions;
 export default userSlice.reducer;
