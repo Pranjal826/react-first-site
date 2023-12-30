@@ -4,6 +4,7 @@ import { useSelector, useDispatch } from "react-redux";
 import { updateUser } from "../store/reducers/UserReducer";
 import { useNavigate } from "react-router-dom";
 import { toast } from "react-toastify";
+import { Footerbot } from "./Footerbot";
 
 const EditProfile = () => {
   const dispatch = useDispatch();
@@ -11,11 +12,11 @@ const EditProfile = () => {
   const navigate = useNavigate();
 
   const [editedUser, setEditedUser] = useState({
-    firstName: loggedInUser.firstName,
-    lastName: loggedInUser.lastName,
-    email: loggedInUser.email,
+    firstName: loggedInUser?.firstName || "",
+    lastName: loggedInUser?.lastName || "",
+    email: loggedInUser?.email || "",
+    password: "", // You may need to handle password separately if needed
   });
-
   const handleInputChange = (e) => {
     const { name, value } = e.target;
     setEditedUser((prevUser) => ({
@@ -24,17 +25,25 @@ const EditProfile = () => {
     }));
   };
 
+  useEffect(() => {
+    if (!loggedInUser) {
+      toast.error("Login to access profile");
+      navigate("/login");
+    }
+  }, [loggedInUser, navigate]);
+
   const handleUpdate = () => {
     dispatch(updateUser({ id: loggedInUser.id, ...editedUser }));
-    toast.success('Profile updated successfully');
+    toast.success("Profile updated successfully");
     navigate("/profile");
   };
 
   return (
-    <div className="h-screen flex items-center justify-center py-6 sm:py-12">
-      <div className="w-[50%] h-[50%] flex flex-col mx-auto bg-white p-8 shadow-md rounded-md">
-        <h2 className="text-3xl font-semibold mb-4 text-center courgette">Edit Profile</h2>
-        <form className="space-y-4">
+    <>
+        <div className="h-[80vh] flex flex-col items-center justify-center py-6 sm:py-12">
+      <div className="w-[50%] h-[80%] flex flex-col mx-auto bg-white p-8 shadow-md rounded-md">
+        <h2 className="text-4xl font-semibold mb-4 text-center courgette ">Edit Profile</h2>
+        <form className="space-y-4 ">
           <div>
             <label htmlFor="firstName" className="block text-sm font-medium text-gray-700">
               First Name
@@ -89,6 +98,10 @@ const EditProfile = () => {
         </form>
       </div>
     </div>
+    <Footerbot/>
+
+    </>
+
   );
 };
 

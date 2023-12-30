@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:opsz@9..40&family=Questrial&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Courgette&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Courgette&family=Playpen+Sans&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:opsz@9..40&family=M+PLUS+1p&family=Questrial&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Cinzel&family=DM+Sans:opsz@9..40&family=M+PLUS+1p&family=Questrial&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Caveat&family=Cinzel&family=DM+Sans:opsz@9..40&family=M+PLUS+1p&family=Questrial&display=swap');
@@ -9,6 +10,10 @@
 /* Smooth scroller */
 html{
     scroll-behavior: smooth;
+}
+.playpen{
+    font-family: 'Playpen Sans', sans-serif;
+    
 }
 .caveat{
     font-family: 'Caveat', cursive;
